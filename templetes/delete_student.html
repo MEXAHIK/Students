@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+{% block header %}<h2>Вы уверенны?</h2>{% endblock %}
+
+{% block content %}
+    Вы уверенны что хотите удалить запись студента
+    <form action = "" method = "POST">
+        {% csrf_token %}
+		<table>
+			<tr>
+			    {% for d in d_student %}
+				    <td>{{ d.last_name }}</td>
+				    <td>{{ d.name }}</td>
+				    <td>{{ d.surname }}</td>
+				    <td>{{ d.birthday }}</td>
+				    <td>{{ d.nubber_student_ticket }}</td>
+				{% endfor %}
+			</tr>
+		</table>
+        <input type = "submit" value = "Да, уверен">
+    </form>
+{% endblock %}

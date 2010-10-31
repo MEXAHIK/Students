@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Список студентов{% endblock %}
+
+{% block header %}Список студентов{% endblock %}
+
+{% block content %}
+<hr>
+{{ group.group_name }}
+<table border = "1">
+<tr><th>Фамилия</th><th>Имя</th><th>Отчество</th><th>Дата рождения</th><th>№ зачетки</th><th>Удаление</th></tr>
+{% for s in s_list %}
+    <tr>
+     <td><a href = "{% url student-details s.id%}">{{ s.last_name }}</a></td>
+     <td>{{ s.name }}</td>
+     <td>{{ s.surname }}</td>
+     <td>{{ s.birthday }}</td>
+     <td>{{ s.nubber_student_ticket }}</td>
+     <td><a href = "{% url student-delete s.id %}">удалить</a></td>
+    </tr>
+{% endfor %}
+</table>    
+<form action = "{% url Students.views.add_student %}" method = "GET">
+    <input type = "submit" value = "Добавить студента">
+</form>
+{% endblock %}

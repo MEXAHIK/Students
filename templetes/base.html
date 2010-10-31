@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="ru-en">
+<head>
+    <title>Тестовое задание: {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <hr>
+    <h3>{% block header %}{% endblock %}</h3>
+    {% block href %}<a href = "{% url Students.views.group_list %}">Группы</a><br />{% endblock %}
+    {% block content %}{% endblock %}<br />
+    {% block content2 %}{% endblock %}
+    {% block footer %}
+    <hr>
+
+    {% endblock %}
+</body>
+</html>

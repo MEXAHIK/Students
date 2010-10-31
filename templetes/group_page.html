@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Главная страница {% endblock %}
+{% block header %} Список групп {% endblock %}
+
+{% block href %}{% endblock %}
+
+{% block content %}
+<table border = "1">
+<tr><th>Название группы</th><th>Староста</th><th>Количество ст-ов</th><th>Действия</th></tr>
+{% for g_list in groups %}
+    <tr>
+        <td><a href = "{% url group-detail g_list.id%}">{{ g_list.group_name }}</a></td>
+        <td>{{ g_list.head_man }}</td>
+        <td>{{ g_list.student_set.count }}</td>
+        <td><a href = "{% url group-edit g_list.id %}">изменить</a> <a href = "{% url group-delete g_list.id %}">удалить</a></td>
+    </tr>
+{% endfor %}
+</table>
+<form action = "{% url Students.views.add_group %}" method = "GET">
+<input type = "submit" value = "Добавить группу"
+</form>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Удаление группы{% endblock %}
+{% block header %}<h2>Вы уверенны?</h2>{% endblock %}
+
+{% block content %}
+    Вы уверенны что хотите удалить группу и все связаные с ней записи?
+    <form action = "" method = "POST">
+        {% csrf_token %}
+		<table>
+			<tr>
+			    {% for g in d_group %}
+				    <td>{{ g.group_name }}</td>
+				    <td>{{ g.head_man }}</td>
+				{% endfor %}
+			</tr>
+		</table>
+		<br />
+		<table>
+		    {% for s in student_list %}
+		        <tr>
+		            <td>{{ s.last_name }}</td>
+		            <td>{{ s.name }}</td>
+		            <td>{{ s.surname }}</td>
+		            <td>{{ s.birthday }}</td>
+		            <td>{{ s.nubber_student_ticket }}</td>
+		        </tr>
+		    {% endfor %}		    
+		</table>
+		<input type = "submit" value = "Да, точно">
+    </form>
+{% endblock %}

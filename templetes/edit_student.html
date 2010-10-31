@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Редактирование записи студента{% endblock %}
+{% block header %}Изменение данных о студенте{% endblock %}
+
+{% block content %}
+    <form action = "" method = "post">
+    {% csrf_token %}
+    <table>
+    {{ student_details.as_table }}
+    </table>
+    <input type = "submit" value = "Сохранить">
+    </form>
+{% endblock %}

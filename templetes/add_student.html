@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Добавление студента{% endblock %}
+{% block header %}Давление нового студента{% endblock %}
+
+{% block content %}
+    <form action = "" method = "POST">
+        {% csrf_token %}
+		<table>
+			<tr>
+				<td>{{ form.as_table }}</td>
+			</tr>
+		</table>
+		<input type = "submit" value = "Добавить"
+    </form>
+{% endblock %}
