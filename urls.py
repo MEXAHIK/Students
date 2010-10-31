@@ -1,5 +1,6 @@
 from django.conf.urls.defaults import *
 from django.contrib import admin
+#from Students.views import views
 admin.autodiscover()
 
 # Uncomment the next two lines to enable the admin:
@@ -8,13 +9,19 @@ admin.autodiscover()
 
 urlpatterns = patterns('Students.views',
     (r'^admin/', include(admin.site.urls)),
-    (r'^/$', 'main')
-    # Example:
-    # (r'^Students/', include('Students.foo.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
-    # (r'^admin/', include(admin.site.urls)),
-)
+    (r'^$', 'group_list'),
+    (r'^group/$', 'group_list'),
+    (r'^group-detail/$', 'group_detail'),
+    url(r'^group/(?P<id>\d+)/$', 'group_detail', name = 'group-detail'),
+    (r'^student-details/$', 'edit_student'),
+    url(r'^student-details/(?P<id>\d+)/$', 'edit_student', name = 'student-details'),
+    (r'^test/$', 'test'),
+    (r'^group-edit/$', 'edit_group'),
+    url(r'^group-edit/(?P<id>\d+)/$', 'edit_group', name = 'group-edit'),
+    (r'^add-group/$', 'add_group'),
+    (r'^add-student/$', 'add_student'),
+    (r'^student-delete/$', 'delete_student'),
+    url(r'^student-delete/(?P<id>\d+)/$', 'delete_student', name = 'student-delete'),
+    (r'^group-delete/$', 'delete_group'),
+    url(r'^group-delete/(?P<id>\d+)/$', 'delete_group', name = 'group-delete'),
+    )
