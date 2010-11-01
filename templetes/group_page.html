@@ -7,17 +7,32 @@
 
 {% block content %}
 <table border = "1">
-<tr><th>Название группы</th><th>Староста</th><th>Количество ст-ов</th><th>Действия</th></tr>
+<tr><th>Название группы</th><th>Староста</th><th>Количество ст-ов</th>
+{% if user.is_authenticated %}
+    {% if perms.studdb.change_groups or perms.studdb.delete_groups %}
+	    <th>Действия</th>
+	{% endif %}
+{% endif %}</tr>
 {% for g_list in groups %}
     <tr>
         <td><a href = "{% url group-detail g_list.id%}">{{ g_list.group_name }}</a></td>
         <td>{{ g_list.head_man }}</td>
         <td>{{ g_list.student_set.count }}</td>
-        <td><a href = "{% url group-edit g_list.id %}">изменить</a> <a href = "{% url group-delete g_list.id %}">удалить</a></td>
+        {% if user.is_authenticated and perms.studdb.change_groups %}
+            <td><a href = "{% url group-edit g_list.id %}">изменить</a> 
+        {% endif %}
+        {% if user.is_authenticated and perms.studdb.delete_groups %}
+            {% if not perms.studdb.change_groups %}
+                <td>
+            {% endif %}
+            <a href = "{% url group-delete g_list.id %}">удалить</a></td>
+        {% endif %}
     </tr>
 {% endfor %}
 </table>
 <form action = "{% url Students.views.add_group %}" method = "GET">
-<input type = "submit" value = "Добавить группу"
+{% if user.is_authenticated and perms.studdb.add_groups %}
+<input type = "submit" value = "Добавить группу">
+{% endif %}
 </form>
 {% endblock %}

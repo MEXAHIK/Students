@@ -8,19 +8,23 @@
 <hr>
 {{ group.group_name }}
 <table border = "1">
-<tr><th>Фамилия</th><th>Имя</th><th>Отчество</th><th>Дата рождения</th><th>№ зачетки</th><th>Удаление</th></tr>
+<tr><th>Фамилия</th><th>Имя</th><th>Отчество</th><th>Дата рождения</th><th>№ зачетки</th>{% if user.is_authenticated and perms.studdb.delete_student %}<th>Удаление</th>{% endif %}</tr>
 {% for s in s_list %}
     <tr>
-     <td><a href = "{% url student-details s.id%}">{{ s.last_name }}</a></td>
+     <td>{% if user.is_authenticated and perms.studdb.change_student %}<a href = "{% url student-details s.id%}">{% endif %}{{ s.last_name }}</a></td>
      <td>{{ s.name }}</td>
      <td>{{ s.surname }}</td>
      <td>{{ s.birthday }}</td>
      <td>{{ s.nubber_student_ticket }}</td>
+     {% if user.is_authenticated and perms.studdb.delete_student %}
      <td><a href = "{% url student-delete s.id %}">удалить</a></td>
+     {% endif %}
     </tr>
 {% endfor %}
 </table>    
 <form action = "{% url Students.views.add_student %}" method = "GET">
-    <input type = "submit" value = "Добавить студента">
+    {% if user.is_authenticated and perms.studdb.add_student %}
+        <input type = "submit" value = "Добавить студента">
+    {% endif %}
 </form>
 {% endblock %}

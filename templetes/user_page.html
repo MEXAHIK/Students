@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Краткая информация{% endblock %}
+{% block header %}{% endblock %}
+
+{% block content %}
+    <table>
+    <tr></tr>
+    {% for u in form %}
+        <tr><td>Логин</td><td>{{ u.username }}</td></tr>
+        <tr><td>Имя</td><td>{{ u.first_name }}</td></tr>
+        <tr><td>Фамилия</td><td>{{ u.last_name }}</td></tr>
+    {% endfor %}
+    <tr><td>{{ perm }}</td></tr>
+    </table>
+{% endblock %}

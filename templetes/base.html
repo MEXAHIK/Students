@@ -6,7 +6,31 @@
 <body>
     <hr>
     <h3>{% block header %}{% endblock %}</h3>
-    {% block href %}<a href = "{% url Students.views.group_list %}">Группы</a><br />{% endblock %}
+    <table  width = 100%>
+    <tr>
+    <td>{% block href %}<a href = "{% url Students.views.group_list %}">Группы</a><br />{% endblock %}</td>
+    
+    <td align = "right" width = 20% bgcolor = "#DDDDDD">{% block auth %}
+        {% if user.is_authenticated %}
+            Добро пожаловать: <a href = "/admin/password_change/">
+            {% if user.first_name != "" %}
+                {{ user.first_name }}</a>
+            {% else %}
+                {{ user.username }}</a>
+            {% endif %}
+            <p><a href = "{% url Students.views.logout_user %}" style = "color: red">Выйти</a></p>
+        {% else %}
+            <form action = "/login/" method = "GET">
+            <label>Логин: </label>
+            <input type = "text" name = "username" value = "">
+            <label>Пароль: </label>
+            <input type = "password" name = "password" value = "">
+            <input type = "submit" value = "Войти">
+            </form>
+        {% endif %}
+    {% endblock %}</td>
+    </tr>
+    </table>
     {% block content %}{% endblock %}<br />
     {% block content2 %}{% endblock %}
     {% block footer %}
