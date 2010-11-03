@@ -28,6 +28,7 @@ urlpatterns = patterns('Students.views',
     (r'logout', 'logout_user'),
     (r'login', 'login_user'),
     (r'autch', 'autch'),
+    url(r'^settings/$', 'settings_show')
     )
 
 

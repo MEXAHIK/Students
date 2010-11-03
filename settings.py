@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-<br />
 # Django settings for Students project.
 
 DEBUG = True
@@ -96,4 +97,15 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    #стандартные
+    'django.core.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media', 
+    'django.core.context_processors.request',
+    #мой
+    'stud_context_processor.show_settings',
 )

@@ -35,7 +35,9 @@
     {% block content2 %}{% endblock %}
     {% block footer %}
     <hr>
-
+    {% block settings %}
+    <a href  = "{% url Students.views.settings_show %}">Показать настройки</a><br />
+    {% endblock %}
     {% endblock %}
 </body>
 </html>

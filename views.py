@@ -107,3 +107,6 @@ def login_user(request):
 def autch(request):
 	return render_to_response ('autch.html')
 	
+def settings_show(request):
+	return render_to_response('settings_show.html', context_instance = RequestContext(request))
+	
