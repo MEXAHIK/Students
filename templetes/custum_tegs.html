@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
+{% load render_to_admin %}
+
 {% block content %}
-{{show_settings|safe}}
+    {% go_to_admin group %}
 {% endblock %}
-{% block settings %}{% endblock %}

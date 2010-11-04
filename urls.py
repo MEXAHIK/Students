@@ -14,7 +14,7 @@ urlpatterns = patterns('Students.views',
     (r'^group-detail/$', 'group_detail'),
     url(r'^group/(?P<id>\d+)/$', 'group_detail', name = 'group-detail'),
     (r'^student-details/$', 'edit_student'),
-    url(r'^student-details/(?P<id>\d+)/$', 'edit_student', name = 'student-details'),
+    url(r'^student-deurls.pytails/(?P<id>\d+)/$', 'edit_student', name = 'student-details'),
     (r'^group-edit/$', 'edit_group'),
     url(r'^group-edit/(?P<id>\d+)/$', 'edit_group', name = 'group-edit'),
     (r'^add-group/$', 'add_group'),
@@ -28,7 +28,8 @@ urlpatterns = patterns('Students.views',
     (r'logout', 'logout_user'),
     (r'login', 'login_user'),
     (r'autch', 'autch'),
-    url(r'^settings/$', 'settings_show')
+    url(r'^settings/$', 'settings_show'), 
+    url(r'^customtags/$',  'custom_tags'), 
     )
 
 

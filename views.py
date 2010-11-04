@@ -109,4 +109,8 @@ def autch(request):
 	
 def settings_show(request):
 	return render_to_response('settings_show.html', context_instance = RequestContext(request))
+
+def custom_tags(request):
+    group = get_object_or_404(Student,  id = 2)
+    return render_to_response('custum_tegs.html',  {'group':  group}, context_instance = RequestContext(request))
 	

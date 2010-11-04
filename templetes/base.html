@@ -36,6 +36,8 @@
     {% block footer %}
     <hr>
     {% block settings %}
+    <a href = "{% url Students.views.custom_tags %}">Custom tag</a>
+    <hr>
     <a href  = "{% url Students.views.settings_show %}">Показать настройки</a><br />
     {% endblock %}
     {% endblock %}
