@@ -3,5 +3,5 @@
 {% load render_to_admin %}
 
 {% block content %}
-    {% go_to_admin group %}
+    {% go_to_admin request.user %}
 {% endblock %}

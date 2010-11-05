@@ -11,6 +11,7 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth.decorators import permission_required
 
+
 def group_list(request):
 	groups = Groups.objects.all()
 	students = Student.objects.all()
@@ -113,4 +114,7 @@ def settings_show(request):
 def custom_tags(request):
     group = get_object_or_404(Student,  id = 2)
     return render_to_response('custum_tegs.html',  {'group':  group}, context_instance = RequestContext(request))
+
+
+	
 	

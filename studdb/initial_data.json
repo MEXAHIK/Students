@@ -3,64 +3,54 @@
         "pk": 1, 
         "model": "studdb.student", 
         "fields": {
-            "last_name": "Bytko", 
+            "last_name": "\u0420\u0443\u0441\u043b\u0430\u043d", 
             "group": 1, 
-            "name": "Ruslan", 
-            "birthday": "2010-10-01", 
+            "name": "\u0411\u0443\u0442\u043a\u043e", 
+            "birthday": "1987-08-29", 
             "nubber_student_ticket": 12345, 
-            "surname": "Ivanovich"
+            "surname": "\u0418\u0432\u0430\u043d\u043e\u0432\u0438\u0447"
         }
     }, 
     {
         "pk": 2, 
-        "model": "studdb.student", 
+        "model": "studdb.groups", 
         "fields": {
-            "last_name": "Simpson", 
-            "group": 1, 
-            "name": "Homer", 
-            "birthday": "2004-11-11", 
-            "nubber_student_ticket": 54321, 
-            "surname": "s"
+            "head_man": null, 
+            "group_name": "asdasd"
         }
     }, 
     {
-        "pk": 3, 
-        "model": "studdb.student", 
+        "pk": 5, 
+        "model": "studdb.groups", 
         "fields": {
-            "last_name": "\u044b\u0432\u0430\u0430", 
-            "group": 1, 
-            "name": "\u044b\u0432\u0430", 
-            "birthday": "1987-08-29", 
-            "nubber_student_ticket": 123456, 
-            "surname": "\u0430\u0430\u0430"
+            "head_man": null, 
+            "group_name": "asdasd"
         }
     }, 
     {
         "pk": 4, 
-        "model": "studdb.student", 
+        "model": "studdb.groups", 
         "fields": {
-            "last_name": "\u041c\u0438\u0437\u0435\u0440\u043d\u044e\u043a", 
-            "group": 2, 
-            "name": "\u0418\u0432\u0430\u043d", 
-            "birthday": "1986-10-16", 
-            "nubber_student_ticket": 54789, 
-            "surname": "\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0438\u0447"
+            "head_man": 1, 
+            "group_name": "wwww"
         }
     }, 
     {
         "pk": 1, 
         "model": "studdb.groups", 
         "fields": {
-            "head_man": 1, 
+            "head_man": null, 
             "group_name": "\u041f\u0417\u0410\u0421 09-1"
         }
     }, 
     {
-        "pk": 2, 
-        "model": "studdb.groups", 
+        "pk": 1, 
+        "model": "studdb.report", 
         "fields": {
-            "head_man": 4, 
-            "group_name": "\u041f\u0417\u0410\u0421 09-2"
+            "date_change": "2010-11-05", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Change"
         }
     }
 ]

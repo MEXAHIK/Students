@@ -29,7 +29,7 @@ urlpatterns = patterns('Students.views',
     (r'login', 'login_user'),
     (r'autch', 'autch'),
     url(r'^settings/$', 'settings_show'), 
-    url(r'^customtags/$',  'custom_tags'), 
+    url(r'^customtags/$',  'custom_tags'),
     )
 
 
