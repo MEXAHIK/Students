@@ -86,16 +86,18 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
-INSTALLED_APPS = (
+INSTALLED_APPS = (    
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
 #    'django.contrib.sites',
 #    'django.contrib.messages',
-    'Students.studdb',
-    'Students.customtegs', 
-    # Uncomment the next line to enable the admin:
+#    'Students.studdb',
+    'studdb',
+    'Students.customtegs',
     'django.contrib.admin',
+    # Uncomment the next line to enable the admin:
+    
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
