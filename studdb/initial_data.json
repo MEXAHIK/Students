@@ -3,44 +3,104 @@
         "pk": 1, 
         "model": "studdb.student", 
         "fields": {
-            "last_name": "\u0420\u0443\u0441\u043b\u0430\u043d", 
+            "last_name": "Ruslan", 
             "group": 1, 
-            "name": "\u0411\u0443\u0442\u043a\u043e", 
+            "name": "Butko", 
             "birthday": "1987-08-29", 
             "nubber_student_ticket": 12345, 
-            "surname": "\u0418\u0432\u0430\u043d\u043e\u0432\u0438\u0447"
+            "surname": "Ivanovich"
         }
     }, 
     {
         "pk": 2, 
+        "model": "studdb.student", 
+        "fields": {
+            "last_name": "asd", 
+            "group": 5, 
+            "name": "asddasd", 
+            "birthday": "2222-02-22", 
+            "nubber_student_ticket": 213, 
+            "surname": "asd"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "studdb.student", 
+        "fields": {
+            "last_name": "222", 
+            "group": 1, 
+            "name": "222", 
+            "birthday": "2002-02-02", 
+            "nubber_student_ticket": 22222, 
+            "surname": "222"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "studdb.student", 
+        "fields": {
+            "last_name": "asd", 
+            "group": 7, 
+            "name": "asd", 
+            "birthday": "2003-03-03", 
+            "nubber_student_ticket": 222, 
+            "surname": "asd"
+        }
+    }, 
+    {
+        "pk": 7, 
         "model": "studdb.groups", 
         "fields": {
             "head_man": null, 
-            "group_name": "asdasd"
+            "group_name": "111"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "studdb.groups", 
+        "fields": {
+            "head_man": null, 
+            "group_name": "aaaa"
         }
     }, 
     {
         "pk": 5, 
         "model": "studdb.groups", 
         "fields": {
-            "head_man": null, 
+            "head_man": 2, 
             "group_name": "asdasd"
         }
     }, 
     {
-        "pk": 4, 
+        "pk": 9, 
         "model": "studdb.groups", 
         "fields": {
-            "head_man": 1, 
-            "group_name": "wwww"
+            "head_man": null, 
+            "group_name": "asssss"
         }
     }, 
     {
         "pk": 1, 
         "model": "studdb.groups", 
         "fields": {
+            "head_man": 1, 
+            "group_name": "group1"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "studdb.groups", 
+        "fields": {
             "head_man": null, 
-            "group_name": "\u041f\u0417\u0410\u0421 09-1"
+            "group_name": "qqq"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "studdb.groups", 
+        "fields": {
+            "head_man": null, 
+            "group_name": "wwww"
         }
     }, 
     {
@@ -51,6 +111,406 @@
             "name_model": "groups", 
             "text": null, 
             "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Delete"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "student", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "student", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "student", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "student", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "student", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "student", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Delete"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Delete"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-08", 
+            "name_model": "user", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "user", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "user", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Delete"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Delete"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "session", 
+            "text": null, 
+            "what_made": "Change"
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "student", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "student", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Addad"
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "studdb.report", 
+        "fields": {
+            "date_change": "2010-11-09", 
+            "name_model": "groups", 
+            "text": null, 
+            "what_made": "Addad"
         }
     }
 ]

@@ -9,7 +9,7 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2010-11-05 10:11:28", 
+            "last_login": "2010-11-09 04:36:27", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$09aae$ecb39065aecb6f15c0118d1672412c4ce9ddf1ea", 

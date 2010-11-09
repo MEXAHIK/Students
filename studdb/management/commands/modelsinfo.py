@@ -12,7 +12,7 @@ class Command( AppCommand ):
 		lines = []
 		group = Groups.objects.all()
 		for g in group:
-			lines.append( "%s" % (g.group_name))
+			lines.append( "%s id: %s" % (g.group_name, g.id))
 			group_obj = get_object_or_404(Groups, id = g.id)
 			student = group_obj.student_set.all()
 			for s in student:

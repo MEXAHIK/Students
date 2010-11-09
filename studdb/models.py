@@ -50,7 +50,7 @@ def handler_delete(sender, **kwargs):
 		what_made = "Delete"
 		date_change = datetime.datetime.now()
 		test = "%s %s, %s" % (what_made, name_model, date_change)
-		print test
+#		print test
 		report_temp = Report(name_model = name_model, what_made = what_made, date_change = date_change)
 		report_temp.save()
 
@@ -64,7 +64,7 @@ def handler_change(sender, created, **kwargs):
 			what_made = "Change"
 		else:
 			what_made = "Addad"
-		print "%s %s, %s" % (what_made, name_model, date_change)
+		#print "%s %s, %s" % (what_made, name_model, date_change)
 		report_temp = Report(name_model = name_model, what_made = what_made,date_change = date_change)
 		report_temp.save()
 	
